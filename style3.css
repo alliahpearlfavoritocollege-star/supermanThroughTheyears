@@ -29,11 +29,10 @@
     z-index: 2;
     display: flex;
     flex-direction: column;
-    justify-content: flex-end;
     align-items: flex-start; 
     width: 100%;
-    padding: 0 60px;        
-    bottom: 50px; 
+    padding: 80px 60px;
+    margin-top: auto;
 }
 
 .info-section {
@@ -43,19 +42,20 @@
 }
 
 .info-section h1 {
-    font-size: 4rem;
-    margin: 15px 0;
+    font-size: clamp(2.5rem, 5vw, 4rem);
+    line-height: 1.1;
+    margin: 10px 0 20px 0;
     text-transform: uppercase;
+    word-wrap: break-word;
 }
 
 .card-track {
-display: flex;
-    gap: 15px;
+    display: flex;
+    gap: 20px;
     height: 250px;
     align-items: flex-end;
     justify-content: flex-start;
-    padding-left: 0; 
-    margin-left: 0;
+    margin-top: 40px;
 }
 
 .card {
@@ -83,11 +83,11 @@ display: flex;
 
 #description {
     font-family: 'Roboto', sans-serif; 
-    font-size: 1.1rem;
+    font-size: 1.05rem;
     line-height: 1.6;
-    color: rgba(255, 255, 255, 0.9);
-    max-width: 500px;
-    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.6);
+    color: rgba(255, 255, 255, 0.95);
+    max-width: 450px;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.8);
 }
 
 
