@@ -1,0 +1,83 @@
+@font-face {
+    font-family: 'CC Ultimatum';
+    src: url('CCUltimatum-Bold.ttf') format('truetype'); 
+    font-weight: bold;
+    font-style: normal;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    font-family: 'CC Ultimatum', sans-serif;
+    background-color: #000b1a; 
+    overflow: hidden;
+}
+
+.hero-container {
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 10;
+    background: linear-gradient(135deg, #000b1a, #003399, #ff0000, #001a66, #000b1a);
+    background-size: 400% 400%;
+    animation: wavyBackground 12s ease-in-out infinite;
+}
+
+@keyframes wavyBackground {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+.logo {
+    width: 350px;
+    max-width: 80%;
+    margin-bottom: 40px;
+    filter: drop-shadow(0px 20px 40px rgba(0,0,0,0.7));
+    transition: transform 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.logo:hover {
+    transform: scale(1.1);
+}
+
+.btn {
+    background-color: #ffffff;
+    color: #000000;
+    padding: 18px 45px;
+    border-radius: 60px;
+    text-decoration: none;
+    font-size: 1.1rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: all 0.4s ease;
+    border: none;
+    cursor: pointer;
+    box-shadow: 0px 0px 20px rgba(255, 255, 255, 0.2), 
+                0px 10px 30px rgba(0, 0, 0, 0.5);
+    animation: pulseGlow 4s ease-in-out infinite;
+}
+
+@keyframes pulseGlow {
+    0%, 100% { box-shadow: 0px 0px 15px rgba(255, 255, 255, 0.2); }
+    50% { box-shadow: 0px 0px 35px rgba(255, 255, 255, 0.5); }
+}
+
+.btn:hover {
+    background-color: #ffffff;
+    transform: translateY(-5px);
+    box-shadow: 0px 0px 50px rgba(255, 255, 255, 0.7);
+    letter-spacing: 2px;
+    animation: none;
+}
